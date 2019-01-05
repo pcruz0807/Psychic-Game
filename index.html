@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="assets/javascript/game.js"></script>
-    <link rel="text/stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <script src="assets/javascript/game.js"></script> 
+
     <title>Document</title>
 </head>
-<body>
-    <header><h1>Psychic Game!</h1></header>
 
+<style>
+#winner {
+    background-color: green;
+    height: 20px;
+    width: 20px;
+    
+    
+
+}
+
+
+</style>
+<body>
+    <div class="p-3 mb-2 bg-primary text-white">
+    <header><h1 style= "text-align:center;">Psychic Game!</h1></header>
+    </div> 
+    <div style="text-align:center;">  
     <h2>What letter am I thinking?</h2>
     <p id="wins-text">Wins: 0 </p>
     <p id="losses-text">Losses: 0 </p>
     <p id="guess-remain">Guesses Left: 9 </p>
     <p id="guesses">Guessed so far: </p>
-
-
+    
+    
+    <p id="winner" style="display:none">You Win!</p>
+    </div>
     
 </body>
 </html>

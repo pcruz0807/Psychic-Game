@@ -24,7 +24,10 @@ document.onkeyup = function(event){
     if (userGuess === computerGuess) {
         wins++;
         console.log("wins: " + wins);
+        console.log("You win!");
+        alert("You Win!");
         reset();
+        
 //No match
     } else {
         guesses.push(userGuess);
@@ -42,4 +45,5 @@ document.onkeyup = function(event){
     document.getElementById("losses-text").innerHTML = "<p>Losses: " + losses + "</p>";
     document.getElementById("guess-remain").innerHTML = "<p>Guesses Left: " + guessRemain + "</p>";
     document.getElementById("guesses").innerHTML = "<p>Guessed so far: " + guesses.join(', ') + "</p>";
+    
 };
