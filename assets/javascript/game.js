@@ -5,6 +5,7 @@ var losses = 0;
 var guessRemain = 9;
 var guesses = [];
 
+
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 
